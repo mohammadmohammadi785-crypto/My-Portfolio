@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin, Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     const public_key = "747elBlmsZvJVxLfn";
     const template_id = "template_ah5s4e9";
@@ -75,12 +75,12 @@ export default function Contact() {
           <p className="text-lg mb-4 flex items-center">
             <Github className="mr-2 h-5 w-5 text-blue-500" />
             <a
-              href="https://github.com/mohammad-1mohammadi"
+              href="https://github.com/mohammadmohammadi785-crypto"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
             >
-              github.com/mohammad-1mohammadi
+              github.com/mohammadmohammadi785-crypto
             </a>
           </p>
         </div>

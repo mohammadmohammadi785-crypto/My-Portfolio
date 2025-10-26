@@ -10,14 +10,12 @@ interface ThemeContextType {
   toggleTheme: () => void;
 }
 
-export const ThemeContext = createContext<ThemeContextType>({
+const ThemeContext = createContext<ThemeContextType>({
   theme: "light",
   toggleTheme: () => {},
 });
 
-export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
-  children,
-}) => {
+const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<string>(() => {
     // دریافت تم ذخیره‌شده از localStorage یا پیش‌فرض لایت
     return localStorage.getItem("theme") || "light";
@@ -44,3 +42,5 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
     </ThemeContext.Provider>
   );
 };
+export default ThemeProvider;
+export { ThemeContext };
