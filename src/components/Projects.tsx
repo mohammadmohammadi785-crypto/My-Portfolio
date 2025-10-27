@@ -21,7 +21,7 @@ const projects: Project[] = [
     title: "Portfolio Website",
     description:
       "A personal portfolio showcasing my work, built with React and Tailwind CSS.",
-    link: "https://github.com/mohammad-1mohammadi/portfolio",
+    link: "https://github.com/mohammadmohammadi785-crypto/portfolio",
     image: "./src/assets/project2.jpg",
   },
   {
