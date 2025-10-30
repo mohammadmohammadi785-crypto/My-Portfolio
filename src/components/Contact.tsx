@@ -50,18 +50,18 @@ export default function Contact() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="contact"
-      className="bg-white p-8 rounded-lg shadow-lg"
+      className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg"
     >
-      <h2 className="text-4xl font-bold mb-6 flex items-center text-gray-800">
-        <Mail className="mr-3 h-8 w-8" /> Contact
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 flex items-center">
+        <Mail className="mr-3 h-7 w-7 sm:h-8 sm:w-8" /> Contact
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
         <div>
-          <p className="text-lg mb-4 flex items-center">
+          <p className="flex items-center text-sm sm:text-base">
             <Mail className="mr-2 h-5 w-5 text-blue-500" /> Email:
             mohammadmohammadi2025@gmail.com
           </p>
-          <p className="text-lg mb-4 flex items-center">
+          <p className="text-sm sm:text-base md:text-lg flex items-center text-gray-600">
             <Linkedin className="mr-2 h-5 w-5 text-blue-500" />
             <a
               href="https://www.linkedin.com/in/mohammad-mohammadi-372a45394/"
@@ -72,7 +72,7 @@ export default function Contact() {
               https://www.linkedin.com/in/mohammad-mohammadi-372a45394/
             </a>
           </p>
-          <p className="text-lg mb-4 flex items-center">
+          <p className="text-sm sm:text-base md:text-lg flex items-center text-gray-600">
             <Github className="mr-2 h-5 w-5 text-blue-500" />
             <a
               href="https://github.com/mohammadmohammadi785-crypto"

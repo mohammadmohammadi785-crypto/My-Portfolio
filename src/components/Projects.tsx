@@ -13,30 +13,16 @@ const projects: Project[] = [
     title: "Online Restaurant",
     description:
       "A full-featured online Restaurant built with React, TypeScript, and Tailwindcss.",
-    link: "https://github.com/mohammad-1mohammadi/ecommerce",
+    link: "https://github.com/mohammadmohammadi785-crypto",
     image: "./src/assets/project1.png",
   },
-  
+
   {
     title: "Portfolio Website",
     description:
       "A personal portfolio showcasing my work, built with React and Tailwind CSS.",
     link: "https://github.com/mohammadmohammadi785-crypto/portfolio",
     image: "./src/assets/project2.jpg",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A productivity app with real-time collaboration using React and Tailwindcss.",
-    link: "https://github.com/mohammad-1mohammadi/task-manager",
-    image: "/assets/project2.jpg",
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "A responsive dashboard displaying real-time weather data using a public API.",
-    link: "https://github.com/yourusername/weather-dashboard",
-    image: "/assets/project4.jpg",
   },
 ];
 
@@ -63,9 +49,6 @@ function Projects() {
               src={project.image}
               alt={project.title}
               className="w-full h-40 sm:h-48 object-cover"
-              onError={(e) =>
-                (e.currentTarget.src = "https://via.placeholder.com/400x200")
-              }
             />
             <div className="p-4">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">

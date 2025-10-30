@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -6,8 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
-const App: React.FC = () => {
+function App(){
   return (
     <div className="min-h-screen bg-gradient-to-b">
       <Header />
