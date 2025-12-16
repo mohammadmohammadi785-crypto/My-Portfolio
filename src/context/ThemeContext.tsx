@@ -17,18 +17,16 @@ const ThemeContext = createContext<ThemeContextType>({
 
 const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<string>(() => {
-    // دریافت تم ذخیره‌شده از localStorage یا پیش‌فرض لایت
-    return localStorage.getItem("theme") || "light";
+     return localStorage.getItem("theme") || "light";
   });
 
   useEffect(() => {
-    // افزودن یا حذف کلاس 'dark' از ریشه HTML
+
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-    // ذخیره تم در localStorage
     localStorage.setItem("theme", theme);
   }, [theme]);
 

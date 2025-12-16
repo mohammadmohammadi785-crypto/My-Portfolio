@@ -50,35 +50,35 @@ export default function Contact() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       id="contact"
-      className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg"
+      className="bg-white p-6 border-b border-b-normal rounded-b-none sm:p-8 md:p-10 rounded-lg shadow-lg"
     >
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 flex items-center">
-        <Mail className="mr-3 h-7 w-7 sm:h-8 sm:w-8" /> Contact
+      <h2 className="text-2xl sm:text-3xl text-normal md:text-4xl font-bold mb-6 flex items-center">
+        Contact
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+      <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 sm:gap-8">
         <div>
-          <p className="flex items-center text-sm sm:text-base">
-            <Mail className="mr-2 h-5 w-5 text-blue-500" /> Email:
+          <p className="flex items-center text-normal text-sm sm:text-base">
+            <Mail className="mr-2 h-5 w-5" /> Email:
             mohammadmohammadi2025@gmail.com
           </p>
-          <p className="text-sm sm:text-base md:text-lg flex items-center text-gray-600">
-            <Linkedin className="mr-2 h-5 w-5 text-blue-500" />
+          <p className="text-sm text-normal sm:text-base md:text-lg flex items-center">
+            <Linkedin className="mr-2 h-5 w-5" />
             <a
               href="https://www.linkedin.com/in/mohammad-mohammadi-372a45394/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="hover:underline"
             >
               https://www.linkedin.com/in/mohammad-mohammadi-372a45394/
             </a>
           </p>
-          <p className="text-sm sm:text-base md:text-lg flex items-center text-gray-600">
-            <Github className="mr-2 h-5 w-5 text-blue-500" />
+          <p className="text-sm sm:text-base text-normal md:text-lg flex items-center ">
+            <Github className="mr-2 h-5 w-5 " />
             <a
               href="https://github.com/mohammadmohammadi785-crypto"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="hover:underline"
             >
               github.com/mohammadmohammadi785-crypto
             </a>
@@ -94,7 +94,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-normal"
             >
               Name
             </label>
@@ -104,14 +104,14 @@ export default function Contact() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-1 w-full p-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500"
+              className="mt-1 w-full p-2 border rounded-lg focus:outline-0 focus:border-normal"
               required
             />
           </div>
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-normal"
             >
               Email
             </label>
@@ -121,14 +121,14 @@ export default function Contact() {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 w-full p-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500"
+              className="mt-1 w-full p-2 border rounded-lg focus:outline-0 focus:border-normal"
               required
             />
           </div>
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-normal"
             >
               Message
             </label>
@@ -137,7 +137,7 @@ export default function Contact() {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="mt-1 w-full p-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500"
+              className="mt-1 w-full p-2 border rounded-lg focus:outline-0 focus:border-normal"
               rows={4}
               required
             ></textarea>
@@ -146,7 +146,7 @@ export default function Contact() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="bg-blue-600 text-white px-6 py-3 rounded-full flex items-center hover:bg-blue-700 transition-colors duration-300"
+            className="bg-normal text-white px-6 py-3 rounded-full flex items-center  transition-colors duration-300"
           >
             <Send className="mr-2 h-5 w-5" /> Send Message
           </motion.button>

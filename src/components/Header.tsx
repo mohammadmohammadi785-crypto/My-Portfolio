@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, User, Briefcase, Mail, Sun, Moon, Menu, X } from "lucide-react";
+import { Sun, Moon, Menu, X } from "lucide-react";
 import { ThemeContext } from "../context/ThemeContext";
 
 function Header() {
@@ -8,14 +8,10 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "#home", label: "Home", icon: <Home className="h-5 w-5" /> },
-    { href: "#about", label: "About", icon: <User className="h-5 w-5" /> },
-    {
-      href: "#projects",
-      label: "Projects",
-      icon: <Briefcase className="h-5 w-5" />,
-    },
-    { href: "#contact", label: "Contact", icon: <Mail className="h-5 w-5" /> },
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -25,10 +21,10 @@ function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 120, damping: 20 }}
-      className="bg-gray-900 text-white py-3 sm:py-4 sticky top-0 z-50 shadow-lg"
+      className="bg-black border-b-normal border-b text-white py-3 sm:py-4 sticky top-0 z-50 shadow-lg"
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight">
+        <h1 className="text-xl font-Brush gradient-bg text-normal sm:text-2xl md:text-3xl font-extrabold tracking-tight">
           Mohammad Mohammadi
         </h1>
         <div className="hidden sm:flex items-center space-x-6">
@@ -38,9 +34,8 @@ function Header() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="flex items-center hover:text-blue-400 transition-colors"
+                    className="flex text-normal items-center transition-colors"
                   >
-                    {item.icon}
                     <span className="hidden md:inline ml-1">{item.label}</span>
                   </a>
                 </li>
@@ -51,7 +46,7 @@ function Header() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={toggleTheme}
-            className="p-2 rounded-full bg-gray-800 hover:bg-gray-700"
+            className="p-2 text-normal rounded-full"
           >
             {theme === "light" ? (
               <Moon className="h-5 w-5" />
@@ -65,7 +60,7 @@ function Header() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={toggleTheme}
-            className="p-2 rounded-full bg-gray-800"
+            className="p-2 rounded-full bg-black"
           >
             {theme === "light" ? (
               <Moon className="h-5 w-5" />
@@ -89,11 +84,11 @@ function Header() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
-            className="sm:hidden fixed top-0 right-0 h-full w-64 bg-gray-900 z-40 shadow-2xl"
+            className="sm:hidden fixed top-0 right-0 h-full w-64 bg-black z-40 shadow-2xl"
           >
             <div className="flex justify-end p-4">
               <button onClick={toggleMenu}>
-                <X className="h-7 w-7 text-gray-400" />
+                <X className="h-7 w-7" />
               </button>
             </div>
             <ul className="flex flex-col space-y-6 px-6 pt-4">
@@ -102,9 +97,8 @@ function Header() {
                   <a
                     href={item.href}
                     onClick={toggleMenu}
-                    className="flex items-center text-lg hover:text-blue-400 transition-colors"
+                    className="flex items-center text-lg text-normal transition-colors"
                   >
-                    {item.icon}
                     <span className="ml-3">{item.label}</span>
                   </a>
                 </li>

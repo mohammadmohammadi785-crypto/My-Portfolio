@@ -33,10 +33,10 @@ function Projects() {
       initial={{ x: 100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-white p-6 sm:p-8 rounded-lg shadow-lg"
+      className="bg-white p-6 border-b rounded-b-none sm:p-8 rounded-lg shadow-lg"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold mb-6 flex items-center text-gray-800">
-        <Briefcase className="mr-3 h-7 sm:h-8 w-7 sm:w-8" /> Projects
+      <h2 className="text-3xl sm:text-4xl font-bold mb-6 flex items-center ">
+        Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (

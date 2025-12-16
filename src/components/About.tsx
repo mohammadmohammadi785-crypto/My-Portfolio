@@ -1,23 +1,45 @@
 import { motion } from "framer-motion";
-import { User, Code } from "lucide-react";
-
+import { Github } from "lucide-react";
+import nextdotjs from "/nextdotjs.svg";
+import tailwindcss from "/tailwindcss.svg";
+import javascript from "/javascript.svg";
+import html5 from "/html5.svg";
+import react from "/react.svg";
+import css from "/css.svg";
+import typescript from "/typescript.svg";
 export default function About() {
   const skills = [
     {
-      name: "React & TypeScript",
-      icon: <Code className="h-6 w-6 text-blue-500" />,
+      name: "React",
+      icon: <img className="w-6 h-6" src={react} />,
     },
     {
-      name: "Html & Css",
-      icon: <Code className="h-6 w-6 text-green-500" />,
+      name: "Type Script",
+      icon: <img className="w-6 h-6" src={typescript} />,
     },
     {
       name: "Java Script",
-      icon: <Code className="h-6 w-6 text-purple-500" />,
+      icon: <img className="w-6 h-6" src={javascript} />,
+    },
+    {
+      name: "Html",
+      icon: <img className="w-6 h-6" src={html5} />,
+    },
+    {
+      name: "CSS",
+      icon: <img className="w-6 h-6" src={css} />,
     },
     {
       name: "Tailwind CSS",
-      icon: <Code className="h-6 w-6 text-teal-500" />,
+      icon: <img className="w-6 h-6" src={tailwindcss} />,
+    },
+    {
+      name: "NextJs",
+      icon: <img className="w-6 h-6" src={nextdotjs} />,
+    },
+    {
+      name: "GitHub",
+      icon: <Github className="h-6 w-6  text-black" />,
     },
   ];
 
@@ -27,23 +49,23 @@ export default function About() {
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg"
+      className="bg-white border-b rounded-b-none p-6 sm:p-8 md:p-10 rounded-lg shadow-lg"
     >
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 flex items-center">
-        <User className="mr-3 h-7 w-7 sm:h-8 sm:w-8" /> About Me
+      {" "}
+      <h2 className="text-2xl text-normal sm:text-3xl md:text-4xl font-bold mb-6 flex items-center">
+        About Me
       </h2>
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="flex-shrink-0 relative"
+          className="flex-shrink-0 "
         >
-          <div className="gradient-bg w-56 h-56 sm:w-64 sm:h-64 md:w-64 md:h-64 rounded-full absolute -z-10"></div>
           <img
-            src="./src/assets/img5.webp"
+            src="./src/assets/profile2.webp"
             alt="Your Profile"
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-blue-500 shadow-md z-10"
+            className="w-40 h-40 right-0 top-0 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-normal shadow-md z-10"
           />
         </motion.div>
         <div>
