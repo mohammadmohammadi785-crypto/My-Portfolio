@@ -39,13 +39,13 @@ function Home() {
       >
         <a
           href="#about"
-          className="bg-normal text-white px-6 py-3 rounded-full flex items-center justify-center  transition-colors duration-300"
+          className="bg-normal rounded-sm text-white px-6 py-3 flex items-center justify-center  transition-colors duration-300"
         >
           <User className="mr-2 h-5 w-5" /> Learn More About Me
         </a>
         <a
           href="#projects"
-          className="bg-normal text-white px-6 py-3 rounded-full flex items-center justify-center transition-colors duration-300"
+          className="bg-normal text-white px-6 py-3 rounded-sm flex items-center justify-center transition-colors duration-300"
         >
           <Code className="mr-2 h-5 w-5" /> View My Projects
         </a>

@@ -20,7 +20,7 @@ const projects: Project[] = [
     description:
       "A personal portfolio showcasing my work, built with React and Tailwind CSS.",
     link: "https://github.com/mohammadmohammadi785-crypto/portfolio",
-    image: "./src/assets/project2.jpg",
+    image: "./src/assets/project2.png",
   },
 ];
 
@@ -41,7 +41,7 @@ function Projects() {
           <motion.div
             key={index}
             whileHover={{ scale: 1.03 }}
-            className="border rounded-lg overflow-hidden shadow-md bg-gray-50"
+            className="border overflow-hidden shadow-md bg-gray-50"
           >
             <img
               src={project.image}
