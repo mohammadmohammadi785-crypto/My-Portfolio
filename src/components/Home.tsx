@@ -26,8 +26,9 @@ function Home() {
         className="text-base w-[70%] sm:text-lg md:text-xl mb-8  text-gray-600"
       >
         Hi, I'm Mohammad Mohammadi, a passionate web developer specializing in
-        modern web technologies like React, TypeScript, and Tailwindcss. I build
-        responsive, user-friendly applications that make an impact.
+        modern web technologies like Java Script, Next.js, React.js, TypeScript,
+        and Tailwindcss. I build responsive, user-friendly applications that
+        make an impact.
       </motion.p>
 
       <motion.div

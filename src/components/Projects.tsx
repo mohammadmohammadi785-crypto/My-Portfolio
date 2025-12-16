@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { Briefcase } from "lucide-react";
-
 interface Project {
   title: string;
   description: string;
