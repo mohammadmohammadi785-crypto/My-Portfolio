@@ -46,7 +46,7 @@ function Projects() {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-40 sm:h-48 object-cover"
+              className="w-full h-40 sm:h-48 bg-cover"
             />
             <div className="p-4">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">
