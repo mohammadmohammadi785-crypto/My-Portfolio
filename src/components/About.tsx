@@ -95,7 +95,7 @@ export default function About() {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
-                  className="flex items-center p-3 bg-gray-100 text-sm sm:text-base"
+                  className="flex items-center text-black p-3 bg-gray-100 text-sm sm:text-base"
                 >
                   {skill.icon}
                   <span className="ml-3 text-base sm:text-lg font-medium">
