@@ -63,7 +63,7 @@ export default function About() {
           className="flex-shrink-0 "
         >
           <img
-            src="./src/assets/profile2.jpg"
+            src="./profile2.jpg"
             alt="Your Profile"
             className="w-40 h-40 right-0 top-0 sm:w-48 sm:h-48 md:w-50 bg-cover md:h-50 rounded-full border-4 border-normal shadow-md z-10"
           />

@@ -12,7 +12,7 @@ const projects: Project[] = [
     description:
       "A full-featured online Restaurant built with React, TypeScript, and Tailwindcss.",
     link: "https://github.com/mohammadmohammadi785-crypto",
-    image: "./src/assets/project1.png",
+    image: "./project1.png",
   },
 
   {
@@ -20,7 +20,7 @@ const projects: Project[] = [
     description:
       "A personal portfolio showcasing my work, built with React and Tailwind CSS.",
     link: "https://github.com/mohammadmohammadi785-crypto/portfolio",
-    image: "./src/assets/project2.png",
+    image: "./project2.png",
   },
 ];
 
