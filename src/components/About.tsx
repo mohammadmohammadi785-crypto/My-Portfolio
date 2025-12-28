@@ -11,31 +11,31 @@ export default function About() {
   const skills = [
     {
       name: "React",
-      icon: <img className="w-6 h-6" src={react} />,
+      icon: <img className="w-6 h-6 text-black" src={react} />,
     },
     {
       name: "Type Script",
-      icon: <img className="w-6 h-6" src={typescript} />,
+      icon: <img className="w-6 h-6 text-black" src={typescript} />,
     },
     {
       name: "Java Script",
-      icon: <img className="w-6 h-6" src={javascript} />,
+      icon: <img className="w-6 h-6 text-black" src={javascript} />,
     },
     {
       name: "Html",
-      icon: <img className="w-6 h-6" src={html5} />,
+      icon: <img className="w-6 h-6 text-black" src={html5} />,
     },
     {
       name: "CSS",
-      icon: <img className="w-6 h-6" src={css} />,
+      icon: <img className="w-6 h-6 text-black" src={css} />,
     },
     {
       name: "Tailwind CSS",
-      icon: <img className="w-6 h-6" src={tailwindcss} />,
+      icon: <img className="w-6 h-6 text-black" src={tailwindcss} />,
     },
     {
       name: "NextJs",
-      icon: <img className="w-6 h-6" src={nextdotjs} />,
+      icon: <img className="w-6 h-6 text-black" src={nextdotjs} />,
     },
     {
       name: "GitHub",
