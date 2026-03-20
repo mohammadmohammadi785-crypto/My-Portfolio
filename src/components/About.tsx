@@ -4,7 +4,7 @@ import nextdotjs from "/nextdotjs.svg";
 import tailwindcss from "/tailwindcss.svg";
 import javascript from "/javascript.svg";
 import html5 from "/html5.svg";
-import react from "/react.svg";
+import react from "/react1.svg";
 import css from "/css.svg";
 import laravel from "/laravel.svg";
 import typescript from "/typescript.svg";
