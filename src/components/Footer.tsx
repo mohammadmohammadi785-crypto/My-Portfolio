@@ -21,7 +21,7 @@ function Footer() {
     },
     {
       name: "Twitter",
-      href: "https://x.com/yourusername",
+      href: "https://x.com/M0HAMMADI1212",
       icon: <Twitter className="h-5 w-5 sm:h-6 sm:w-6" />,
     },
   ];

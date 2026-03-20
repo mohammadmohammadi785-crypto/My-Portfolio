@@ -6,12 +6,13 @@ import javascript from "/javascript.svg";
 import html5 from "/html5.svg";
 import react from "/react.svg";
 import css from "/css.svg";
+import laravel from "/laravel.svg";
 import typescript from "/typescript.svg";
 export default function About() {
   const skills = [
     {
       name: "React",
-      icon: <img className="w-6 h-6 text-black" src={react} />,
+      icon: <img className="w-6 h-6 text-black " src={react} />,
     },
     {
       name: "Type Script",
@@ -40,6 +41,10 @@ export default function About() {
     {
       name: "GitHub",
       icon: <Github className="h-6 w-6  text-black" />,
+    },
+    {
+      name: "laravel",
+      icon: <img className="h-6 w-6 font-bold  text-black" src={laravel} />,
     },
   ];
 
