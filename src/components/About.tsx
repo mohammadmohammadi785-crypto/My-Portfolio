@@ -8,7 +8,7 @@ import react from "/react.svg";
 import css from "/css.svg";
 import laravel from "/laravel.svg";
 import typescript from "/typescript.svg";
-import redux from "/redux.svg";
+import redux from "/redux1.svg";
 export default function About() {
   const skills = [
     {
