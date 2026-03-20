@@ -8,6 +8,7 @@ import react from "/react.svg";
 import css from "/css.svg";
 import laravel from "/laravel.svg";
 import typescript from "/typescript.svg";
+import redux from "/redux.svg";
 export default function About() {
   const skills = [
     {
@@ -45,6 +46,10 @@ export default function About() {
     {
       name: "laravel",
       icon: <img className="h-6 w-6 font-bold  text-black" src={laravel} />,
+    },
+    {
+      name: "redux",
+      icon: <img className="h-6 w-6 font-bold  text-black" src={redux} />,
     },
   ];
 
