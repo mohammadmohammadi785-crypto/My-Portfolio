@@ -85,12 +85,13 @@ export default function About() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-base md:text-lg sm:text-lg mb-6 text-gray-600"
           >
-            I'm Mohammad Mohammadi, a dedicated web developer with over 1 years
+            I'm Mohammad Mohammadi, a dedicated web developer with over 2 years
             of experience in building scalable and user-friendly web
             applications. My passion lies in creating seamless digital
-            experiences using modern technologies like React, TypeScript, Html,
-            Css and Tailwindcss. I thrive on solving complex problems and
-            delivering high-quality solutions that meet user needs.
+            experiences using modern technologies like Laravel, React, Next,
+            TypeScript, JavaScript, Html, Css, TailwindCSS, GitHub And redux. I
+            thrive on solving complex problems and delivering high-quality
+            solutions that meet user needs.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
