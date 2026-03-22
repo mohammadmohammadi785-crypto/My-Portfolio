@@ -24,7 +24,7 @@ function Header() {
       className="bg-black border-b-normal border-b text-white py-3 sm:py-4 sticky top-0 z-50 shadow-lg"
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <h1 className="text-xl font-Brush gradient-bg text-normal sm:text-2xl md:text-3xl font-extrabold tracking-tight">
+        <h1 className="text-xl brush gradient-bg text-normal sm:text-2xl md:text-3xl font-extrabold tracking-tight">
           Mohammad Mohammadi
         </h1>
         <div className="hidden sm:flex items-center space-x-6">

@@ -15,6 +15,12 @@
   animation: gradientAnimation 8s ease infinite;
   transform: translate(-4%, -4%);
 }
+.brush {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 @keyframes gradientAnimation {
   0% {
