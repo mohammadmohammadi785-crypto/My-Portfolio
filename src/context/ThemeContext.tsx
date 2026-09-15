@@ -17,11 +17,10 @@ const ThemeContext = createContext<ThemeContextType>({
 
 const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<string>(() => {
-     return localStorage.getItem("theme") || "light";
+    return localStorage.getItem("theme") || "light";
   });
 
   useEffect(() => {
-
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
